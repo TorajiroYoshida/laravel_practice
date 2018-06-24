@@ -71,7 +71,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "laravel/homestead"
-  config.vm.synced_folder('vagrant/','/home/vagrant/')
+  config.vm.synced_folder('code/','/home/vagrant/code/')
 end
 
 

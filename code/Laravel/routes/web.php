@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/board', 			'BoardController@board');
+
+Route::get('/', 				'PagesController@index');
+Route::view('/create', 			'UsersController@create');
+Route::post('/posts', 			'UsersController@save');
+Route::get('/users/{user}', 	'PagesController@confirm');
+Route::post('/delete', 			'UsersController@delete');
